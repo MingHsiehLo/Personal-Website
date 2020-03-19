@@ -1,0 +1,169 @@
+main {
+    width: 1200px;
+}
+
+#welcome>p:first-child {
+    text-decoration: underline gray;
+    margin: 30px 0 0 0;
+}
+
+#welcome>p:last-child {
+    margin: 0;
+}
+
+
+#welcome>p {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    padding: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin: 50px 0 60px 0;
+}
+
+#section1-picture {
+    height: 340px;
+    width: 330px;
+}
+
+#section1-picture>img {
+    height: 340px;
+    width: 330px;
+    border-radius: 0 20px 0 20px;
+}
+
+#section1-description {
+    height: 340px;
+    width: 552px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#section1-description>li:first-child {
+    font-size: 40px;
+    height: 96px;
+    width: 406.45px;
+    margin: 0;
+}
+
+#section1-description>li:last-child {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: justify;
+    height: 150px;
+    width: 552px;
+    margin: 0;
+}
+
+#section1-description>li>p {
+    margin: 0;
+}
+
+#achivement {
+    background-color: rgb(239, 239, 239);
+    height: 620px;
+}
+
+#achivement>p {
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 0 30px 0;
+    margin: 0;
+}
+
+#certificate {
+    height: 220px;
+    width: 200px;
+    border-radius: 40px 0 40px 0;
+}
+
+#research-img {
+    height: 220px;
+    width: 200px;
+    border-radius: 40px 0 40px 0;
+}
+
+#achivement-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0 0 0;
+    padding: 0;
+}    
+
+#certificate-container {
+    border: dashed rgb(74, 89, 105) 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 90px 0 0;
+}
+
+#research-container {
+    border: dashed rgb(74, 89, 105) 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 0 0 90px;
+}
+
+#certificate-container>li>p, #research-container>li>p {
+    margin: 0;
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+#certificate-container>li>form>button, #research-container>li>form>button {
+    background-color: white;
+    border-radius: 5px;
+    border: solid rgb(170, 61, 61);
+    border-top: 0;
+    border-left: 0;
+    padding: 5px;
+    font-family: 'Lato';
+}
+
+#certificate-container>li>form>button:hover, #research-container>li>form>button:hover {
+    color: white;
+    background-color: rgb(170, 61, 61);;
+    cursor: pointer;
+}
+
+#goup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 40px 0;
+    padding: 0;
+}
+
+#goup>button {
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Lato';
+    border-radius: 5px;
+    border: solid rgb(74, 89, 105);
+    border-top: 0;
+    border-left: 0;
+    padding: 5px;
+}
+
+#goup>button:hover {
+    color: white;
+    background-color: rgb(74, 89, 105);
+    cursor: pointer;  
+}

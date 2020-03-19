@@ -1,0 +1,120 @@
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+label:not(.smallname) {
+    font-size: 16px;
+}
+
+#friendlyMessage {
+    font-size: 25px;
+    font-weight: bold;
+    width: 580px;
+}
+
+#friendlyMessage>p {
+    margin: 25px 0 15px 0;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 580px;
+}
+
+#contactForm>div:nth-child(3), #contactForm>div:nth-child(4), #contactForm>div:nth-child(5) {
+    margin-top: 10px;
+}
+
+#email, #subject {
+    width: 556px;
+    height: 15px;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#message {
+    display: flex;
+    width: 556px;
+    height: 80px;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#contactForm>div:not(#nameForm) {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#nameForm {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#nameForm>div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#fname, #lname {
+    width: 256px;
+    height: 15px;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#fname {
+    margin-right: 10px;
+}
+
+#lname {
+    margin-left: 10px;
+}
+
+.smallname {
+    font-size: 11px;
+}
+
+#inbox-message {
+    font-size: 11px;
+    padding: 0;
+    margin: 3px 0;
+}
+
+#lname-position {
+    margin-left: 10px;
+}
+
+#messagebutton {
+    width: 120px;
+    height: 50px;
+    padding: 0;
+    margin: 10px 0 16px 230px;
+    cursor: pointer;
+    background-color: rgb(239, 239, 239);
+    border: solid 0.5px rgb(225, 128, 0);
+    font-family: 'Lato';
+}
+
+#messagebutton:hover {
+    width: 120px;
+    height: 50px;
+    padding: 0;
+    color: rgb(225, 128, 0);
+    border: 0;
+    background-color: black;
+}

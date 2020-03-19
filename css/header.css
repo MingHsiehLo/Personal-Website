@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(239, 239, 239);
+    height: 30px;
+    width: 1200px;
+}
+header>a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Pretendo';
+    font-size: 30px;
+    color: white;
+    background-color: rgb(230, 0, 18);
+    border-radius: 0 0 15px 15px;
+    height: 50px;
+    width: 160px;
+    margin: 0 0 0 15px;
+}
+header>ul {
+    display: flex;
+}
+#nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 1025px;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+#edu {
+    height: 30px;
+    width: 290px;
+}
+
+#skills {
+    height: 30px;
+    width: 183.75px;
+}
+
+#hobbies {
+    height: 30px;
+    width: 183.75px;
+}
+
+#about {
+    height: 30px;
+    width: 183.75px;
+}
+
+#contact {
+    height: 30px;
+    width: 183.75px;
+}
+
+#nav>li>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #484848;
+}
+#home:hover{
+    transform: scaleY(1.05);
+}
+
+#edu:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#skills:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(206, 24, 30);
+}
+
+#hobbies:hover {
+    background-color: rgb(255, 125, 0);
+}
+
+#about:hover {
+    background-color: rgb(0, 191, 243);
+}
+
+#contact:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 63, 63);
+}
