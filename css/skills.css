@@ -184,7 +184,7 @@ ul>li {
 }
 
 /* Super Long Screens */
-@media only screen and (min-height: 901px) {
+@media only screen and (min-height: 769px) {
 
     #fullsize-skill {
         min-height: auto;

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oxygen&display=swap);
 
 body {
     margin: 0;
@@ -30,7 +31,8 @@ header>a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-family: 'Pretendo';
+    font-family: 'Oxygen';
+    font-weight: bolder;
     font-size: 30px;
     color: white;
     background-color: rgb(230, 0, 18);

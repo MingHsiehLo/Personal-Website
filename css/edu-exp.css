@@ -208,7 +208,6 @@ main>div:last-child, main>div:nth-child(4) {
 
     #education, #experience {
         width: 100%;
-        margin: 5%;
     }
 
     #education-title, #experience-title {
