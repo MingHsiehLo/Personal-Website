@@ -158,7 +158,7 @@
     }
 
     #facts>div>p:last-child {
-        font-size: 13px;
+        font-size: 15px;
     }
     
     #facts>div:last-child {
@@ -228,6 +228,10 @@
     }
 
     #facts>div>p:last-child {
+        font-size: 15px;
+    }
+
+    #aboutmyself>p:nth-child(3) {
         font-size: 15px;
     }
     
