@@ -1,17 +1,30 @@
+.fullsize-about-container {
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullsize-about-container:last-child {
+    background-color: rgb(239, 239, 239);
+}
+
 #facts {
-    width: 1200px;
-    height: 455px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin: 60px 0;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1366px;
+    min-height: 400px;
+    margin: 2%;
 }
 
 #facts>div>img {
-    width: 400px;
-    height: 340px;
-    transform: rotate(90deg);
+    width: 300px;
+    height: 360px;
     border-radius: 30px 0 30px 0;
 }
 
@@ -26,54 +39,46 @@
     font-size: 17px;
     text-align: justify;
     line-height: 30px;
-    margin: 10px 0 0 0;
     padding: 0;
 }
 
 #facts>div:first-child {
-    width: 400px;
-    height: 450px;
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    margin-right: 40px;
 }
 
 #facts>div:last-child {
-    width: 500px;
-    height: 200px;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-left: 40px;
+    margin: 4%;
 }
 
 #aboutmyself>img {
-    width: 260px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin: 60px 0 40px 0;
 }
 
 #aboutmyself {
-    width: 1200px;
-    height: 610px;
-    padding: 15px 0;
-    background-color: rgb(239, 239, 239);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2% 0;
 }
 
 #aboutmyself>p:nth-child(2) {
     font-size: 30px;
     font-weight: bold;
-    margin: 0;
+    margin: 34px 0 17px 0;
 }
 
 #aboutmyself>p:nth-child(3) {
-    width: 700px;
+    width: 70%;
     text-align: center;
     font-size: 17px;
     line-height: 30px;
@@ -83,8 +88,8 @@
     display: flex;
     flex-direction: row;
     width: 500px;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-around;
+    margin-top: 17px;
     margin-right: 50px;
 }
 
@@ -92,7 +97,6 @@
     width: 200px;
     height: 50px;
     padding: 0;
-    margin-right: 40px;
     cursor: pointer;
     background-color: rgb(239, 239, 239);
     border: solid 0.5px rgb(225, 128, 0);
@@ -112,7 +116,6 @@
     width: 120px;
     height: 50px;
     padding: 0;
-    margin-left: 40px;
     cursor: pointer;
     background-color: rgb(239, 239, 239);
     border: solid 0.5px rgb(225, 128, 0);
@@ -126,4 +129,125 @@
     color: rgb(225, 128, 0);
     border: 0;
     background-color: black;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+    .fullsize-about-container {
+        min-height: 95vh;
+    }
+
+    #facts {
+        height: 100%;
+        max-height: 500px;
+        width: 90%;
+        margin: 5%;
+        min-height: auto;
+    }
+
+    #facts>div>img {
+        width: 225px;
+        height: 280px;
+        padding: 3%;
+    }
+
+    #facts>div>p:first-child {
+        font-size: 26px;
+        padding-top: 5%;
+    }
+
+    #facts>div>p:last-child {
+        font-size: 13px;
+    }
+    
+    #facts>div:last-child {
+        margin: 0;
+    }
+
+    #facts>div:first-child {
+        flex-basis: 55%;
+        padding: 0;
+    }
+    
+    #facts>div:last-child {
+        flex-basis: 55%;
+    }
+
+    #about-buttons {
+        margin-top: 17px;
+        margin-right: 0;
+        flex-wrap: wrap;
+        width: 10%;
+    }
+
+    #contactbutton, #edubutton {
+        flex-basis: 100%;
+    }
+
+    #contactbutton {
+        margin-top: 15%;
+    }
+
+    #aboutmyself {
+        margin: 5% 0;
+    }
+
+    #aboutmyself>p:nth-child(3) {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    #aboutmyself>p:nth-child(2) {
+        margin: 24px 0 12px 0;
+    }
+
+    #aboutmyself>img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+
+}
+  
+  /* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+
+    #facts {
+        width: 100%;
+        margin: 5%;
+    }
+
+    #facts>div>img {
+        width: 265px;
+        height: 325px;
+    }
+
+    #facts>div>p:first-child {
+        font-size: 28px;
+    }
+
+    #facts>div>p:last-child {
+        font-size: 15px;
+    }
+    
+    #facts>div:last-child {
+    margin: 0;
+    }
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    
+
+}
+
+/* Super Long Screens */
+@media only screen and (min-height: 769px) {
+    .fullsize-about-container {
+        min-height: auto;
+    }
+    
 }

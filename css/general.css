@@ -1,7 +1,579 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);
-@import url(http://db.onlinewebfonts.com/c/487390d5558cff7a17ce35d7d92a0540?family=Pretendo);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://db.onlinewebfonts.com/c/487390d5558cff7a17ce35d7d92a0540?family=Pretendo);
 
 body {
     margin: 0;
     font-family: 'Lato';
+}
+
+body .fullsize-container {
+    width: 100%;
+}
+
+body .fullsize-container:first-child {
+    background-color: rgb(239, 239, 239);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(239, 239, 239);
+    height: 5vh;
+    min-height: 30px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+
+header>a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Pretendo';
+    font-size: 30px;
+    color: white;
+    background-color: rgb(230, 0, 18);
+    border-radius: 0 0 15px 15px;
+    height: 9vh;
+    min-height: 52.38px;
+    width: 200px;
+    margin: 0 0 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav>a {
+    list-style-type: none;
+}
+
+#edu {
+    white-space: nowrap;
+    padding: 0 20px;
+}
+
+#edu, #skills, #hobbies, #about, #contact {
+    height: 100%;
+    flex: 1;
+}
+
+#nav-dots {
+    display: flex;
+    flex: 1;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    padding: 0 3px;
+}
+
+#nav-dots:hover, #nav-dots:hover>#mobile-nav {
+    color: rgb(255,  255, 255);
+    background-color: rgb(72, 72, 72);
+    cursor: pointer;
+    display: flex;
+}
+
+#mobile-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 100%;
+    height: 20%;
+}
+
+#mobile-nav>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    background-color: white;
+    text-decoration: none;
+    margin: 2%;
+    border-radius: 2%;
+    height: 80%;
+}
+
+#profile-icon, #hobbies-icon {
+    height: 60%;
+}
+
+#mobile-nav>a>span {
+    font-size: 16px;
+    color: black;
+}
+
+#mobile-nav>a:first-child {
+    background-color: #FFD3D3;
+}
+
+#mobile-nav>a:last-child {
+    background-color: #D3EFFF;
+}
+
+nav>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #484848;
+}
+
+header #home:hover{
+    transform: scaleY(1.05);
+}
+
+#edu:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#skills:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(206, 24, 30);
+}
+
+#hobbies:hover {
+    background-color: rgb(255, 125, 0);
+}
+
+#about:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 63, 63);
+}
+
+#contact:hover {
+    background-color: rgb(0, 191, 243);
+}
+
+.margin-container {
+    display: flex;
+    justify-content: center;
+    min-height: 95vh;
+}
+
+.margin-container:nth-child(even) {
+    background-color: rgb(239, 239, 239);
+}
+
+#first-container {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+    width: 75%;
+    max-height: 800px;
+}
+
+#welcome {
+    min-height: auto;
+}
+
+#welcome>p:first-child {
+    text-decoration: underline gray;
+    margin: 0;
+}
+
+#welcome>p:last-child {
+    margin: 0;
+}
+
+#welcome>p {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+#section1-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 30px 0 0 0;
+}
+
+#section1-picture>img {
+    width: 60%;
+    border-radius: 0 20px 0 20px;
+}
+
+#section1-description {
+    padding: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
+
+#section1-title {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#section1-title>p {
+    margin: 0;
+}
+
+#section1-p {
+    font-size: 1em;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0;
+    width: 80%;
+}
+
+#second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 2% 0;
+}
+
+#section2-title {
+    margin: 1% 0;
+}
+
+#section2-title>p {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.section2-picture {
+    display: flex;
+    justify-content: center;
+    margin: 4% 0 0 0;
+}
+
+.section2-picture>img {
+    width: 65%;
+    border-radius: 40px 0 40px 0;
+}
+
+#achivement-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 40%;
+    margin: 2% 0;
+}    
+
+#certificate-container, #research-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#certificate-container>div, #research-container>div {
+    border: dashed rgb(74, 89, 105) 3px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#certificate-container>div>p, #research-container>div>p {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    margin: 4% 0;
+}
+
+#certificate-container>div>a button, #research-container>div>a button {
+    background-color: white;
+    border-radius: 5px;
+    border: solid rgb(170, 61, 61);
+    border-top: 0;
+    border-left: 0;
+    padding: 5px;
+    font-family: 'Lato';
+    font-size: 14px;
+    margin: 0 0 4% 0;
+}
+
+#certificate-container>div>a button:hover, #research-container>div>a button:hover {
+    color: white;
+    background-color: rgb(170, 61, 61);;
+    cursor: pointer;
+}
+
+#goup-container {
+    padding: 2% 0;
+}
+
+#goup-container>a {
+    text-decoration: none;
+}
+
+#goup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#goup>button {
+    font-size: 15px;
+    font-family: 'Lato';
+    border-radius: 5px;
+    border: solid rgb(74, 89, 105);
+    border-top: 0;
+    border-left: 0;
+    padding: 10px 20px;
+}
+
+#goup>button:hover {
+    color: white;
+    background-color: rgb(74, 89, 105);
+    cursor: pointer;  
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    background-color: rgb(64, 63, 63);
+    color: rgb(218, 218, 218);
+}
+
+footer>p:first-child {
+    font-size: 14px;
+}
+
+footer>p:last-child {
+    font-size: 12px;
+    text-align: center;
+    width: 95%;
+}
+
+#social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 220px;
+}
+
+#social-container>a>img {
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+    #hobbies, #about {
+        display: none;
+    }
+
+    header>a {
+        font-size: 18px;
+        margin: 0;
+        height: 5vh;
+        border-radius: 0 10px;
+        width: 130px;
+        margin-left: 7px;
+        min-height: 30px;
+    }
+
+    #edu {
+        padding: 0 7px;
+    }
+
+    nav:not(#nav-dots) {
+        font-size: 12px;
+    }
+
+    #contact, #skills {
+        padding: 0 3px;
+        box-sizing: border-box;
+    }
+
+    #home:hover{
+        transform: none;
+    }
+
+    #first-container {
+        margin: 5% 0;
+        width: 100%;
+    }
+
+    #section1-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #section1-p {
+        align-items: center;
+    }
+
+    #section1-picture {
+        flex-basis: 60%;
+        margin: 20px 0 0 0;
+    }
+
+    #section1-picture>img {
+        width: 50%;
+    }
+
+    #section1-description {
+        align-items: center;
+        flex-basis: 60%;
+        margin: 20px 0 0 0;
+    }
+
+    #welcome {
+        min-height: auto;
+    }
+
+    #welcome>p {
+        font-size: 25px;
+    }
+
+    #welcome>p:last-child {
+        text-align: center;
+    }
+
+    #certificate-container, #research-container {
+        flex-basis: 55%;
+    }
+
+    #certificate-container>div, #research-container>div {
+        width: 80%;
+    }
+
+    #research-container>div {
+        margin: 5% 0 0 0;
+    }
+
+    #social-container {
+        width: 50%;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+}
+  
+  /* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+
+    nav {
+        font-size: 14px;
+    }
+
+    header>a {
+        font-size: 27px;
+        height: 7vh;
+        width: 170px;
+    }
+
+    #contact {
+        padding-right: 5px;
+    }
+
+    #edu {
+        padding-left: 20px;
+    }
+
+    #nav-dots {
+        display: none;
+    }
+
+    #section1-title {
+        text-align: center;
+    }
+
+    #section1-p {
+        align-items: center;
+    }
+
+    #section1-picture {
+        flex-basis: 60%;
+    }
+
+    #section1-picture>img {
+        width: 40%;
+    }
+
+    #section1-description {
+        align-items: center;
+        flex-basis: 70%;
+    }
+
+    #welcome {
+        min-height: auto;
+    }
+
+    #certificate-container, #research-container {
+        flex-basis: 55%;
+    }
+
+    #certificate-container>div, #research-container>div {
+        width: 60%;
+    }
+
+    #research-container>div {
+        margin: 5% 0 0 0;
+    }
+
+    #social-container {
+        width: 30%;
+    }
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    
+    #nav-dots {
+        display: none;
+    }
+
+}
+
+/* Super Long Screens */
+@media only screen and (min-height: 769px) {
+
+    header>a {
+        max-height: 90px;
+    }
+
+    .margin-container {
+        min-height: auto;
+    }
+    
 }

@@ -1,41 +1,51 @@
+.hobbie-container {
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbie-container:nth-child(2) {
+    background-color: rgb(239, 239, 239);
+}
+
+#section1, #section2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1366px;
+    width: 100%;
+    min-height: 550px;
+}
+
 #books-title {
-    font-size: 35px;
-    border: solid 3.5px rgb(206, 24, 30);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    width: 290px;
-    height: 44.5px;
-    margin: 65px 0 0 40px;
+    font-size: 30px;
+    text-decoration: underline rgb(206, 24, 30);
+    text-underline-position: under;
+    text-align: center;
+    width: 25%;
+    margin: 0 1%;
+    white-space: nowrap;
 }
 
 #games-title {
-    font-size: 35px;
-    border: solid 3.5px rgb(206, 24, 30);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    width: 290px;
-    height: 90px;
-    margin: 30px 0 0 40px;
-    padding-top: 50px;
+    font-size: 30px;
+    border-bottom: solid rgb(206, 24, 30);
+    text-align: center;
+    margin: 0 1%;
 }
 
 #books {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 800px;
-    height: 430px;
-    margin-left: 450px;
-    margin-bottom: 35px;
+    margin: 0 1%;
 }
 
 #books>ul {
     display: flex;
     flex-direction: row;
     height: 215px;
-    width: 650px;
     margin: 0;
     padding: 0;
 }
@@ -80,7 +90,7 @@
 
 #book2, #book4, #game2, #game4 {
     padding-left: 15px;
-    border-left: solid 1.5px rgb(218, 218, 218);;
+    border-left: solid 1.5px rgb(218, 218, 218);
     border-right: 0; 
     border-top: 0;
     border-bottom: 0;
@@ -133,36 +143,127 @@
     color: rgb(153, 153, 153);
 }
 
-#section2 {
-    background-color: rgb(239, 239, 239);
-    width: 1200px;
-    height: 620px;
-}
-
-#goup-hobbies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0 0 40px 0;
-    width: 1200px;
+#goup-hobbies-container {
+    padding: 0 0 3% 0;
     background-color: rgb(239, 239, 239);
 }
 
-#goup-hobbies>button {
-    width: 80px;
-    height: 40px;
-    font-size: 15px;
-    font-family: 'Lato';
-    border-radius: 5px;
-    border: solid rgb(74, 89, 105);
-    border-top: 0;
-    border-left: 0;
-    padding: 5px;
+#goup-hobbies-container>a {
+    text-decoration: none;
 }
 
-#goup-hobbies>button:hover {
-    color: white;
-    background-color: rgb(74, 89, 105);
-    cursor: pointer;  
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+    #books-title, #games-title {
+        flex-basis: 50%;
+        margin-top: 5%;
+        font-size: 27px;
+        width: 100%;
+    }
+    
+    #books {
+        flex-basis: 50%;
+        margin: 5% 0;
+    }
+
+    .favoritebooks>div:last-child:not(#specialsize) {
+        width: 115px;
+        height: 200px;
+        padding: 0 0 0 5px;
+    }
+
+    #books>ul {
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    #book2, #book4, #game2, #game4 {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    #book3, #book4, #game4 {
+        border-top: solid 1.5px rgb(218, 218, 218);
+    }
+
+    #book1, #game2 {
+        border-bottom: solid 1.5px rgb(218, 218, 218);
+    }
+
+    #book2, #game2 {
+        padding-top: 15px;
+    }
+
+    #book3, #game3 {
+        padding-bottom: 15px;
+    }
+
+    #books>ul:first-child {
+        border: 0;
+    }
+
+    .favoritebooks>div:last-child>p {
+        font-size: 16px;
+    }
+    
+    .favoritebooks>div>p:first-child {
+        font-size: 18px;
+    }
+
+    #specialsize {
+        padding: 0 0 0 5px;
+        width: 115px;
+        height: 200px;
+    }
+
+}
+  
+  /* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+
+    #books-title {
+        flex-basis: 50%;
+    }
+
+    #games-title {
+        text-decoration: underline rgb(206, 24, 30);
+        text-underline-position: under;
+        border-bottom: 0;
+        flex-basis: 60%;
+    }
+    
+    #books {
+        flex-basis: 50%;
+    }
+
+    .favoritebooks>div:last-child:not(#specialsize) {
+        width: 115px;
+        height: 200px;
+        padding: 0 0 0 5px;
+    }
+
+    #specialsize {
+        width: 95px;
+        height: 200px;
+        padding: 0 0 0 5px;
+    }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    
+
+}
+
+/* Super Long Screens */
+@media only screen and (min-height: 769px) {
+
+    .hobbie-container {
+        min-height: auto;
+    }
+
 }
