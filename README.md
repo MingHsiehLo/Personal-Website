@@ -8,7 +8,7 @@
 * This project was created using only **HTML**, **CSS** and some **media queries** to create a responsive interface. I'm proud of it as a **first version**.
 However, I want to be able to show my portfolio in a better way, so I'll remake and improve it. Maybe with the help of React.js. :triumph:
 
-* The contact form is not working right now, but you can contact me throught LinkedIn. :blush:
+* The contact form is not working right now, but you can contact me throught **LinkedIn**. :blush:
 
 * Inspired in Nintendo.com's website layout.
 
